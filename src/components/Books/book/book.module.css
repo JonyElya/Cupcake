@@ -1,0 +1,6 @@
+.books {
+  background-color: rgb(15, 63, 196);
+  flex: 0 0 20%;
+  max-width: 20%;
+  margin: 10px;
+}
