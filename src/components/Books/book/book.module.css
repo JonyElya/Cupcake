@@ -1,0 +1,10 @@
+.books {
+  flex: 0 0 20%;
+  max-width: 20%;
+  margin: 10px;
+  height: 500px;
+  background-color: #d0d9e2;
+}
+.image {
+  margin-left: -22.5%;
+}

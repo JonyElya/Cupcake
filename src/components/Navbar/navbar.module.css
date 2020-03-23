@@ -1,0 +1,10 @@
+.header {
+}
+.title {
+  color: rgb(77, 71, 97);
+  font-size: 15px;
+}
+.image img {
+  width: 80px;
+  height: 100px;
+}
