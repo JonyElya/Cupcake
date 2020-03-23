@@ -18,7 +18,6 @@ class NavBar extends React.Component {
     this.state = {
       popoverOpen: false
     };
-
   }
 
   render() {

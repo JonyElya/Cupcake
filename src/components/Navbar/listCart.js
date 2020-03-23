@@ -3,7 +3,6 @@ import style from "./navbar.module.css";
 import { Button } from "reactstrap";
 
 const ListCart = props => {
-  console.log(props);
   return (
     <div>
       <div className={style.image}>
