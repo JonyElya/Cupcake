@@ -14,7 +14,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Cupcake"
     }),
-    //Auto replacement of page when i save some file, even css
+    
     new webpack.HotModuleReplacementPlugin()
   ],
 
@@ -28,13 +28,13 @@ module.exports = {
   devServer: {
     port: 3000,
     host: "localhost",
-    //Be possible go back pressing the "back" button at chrome
+  
     historyApiFallback: true,
     noInfo: false,
     stats: "minimal",
     publicPath: publicPath,
     contentBase: path.join(__dirname, publicPath),
-    //hotmodulereplacementeplugin
+   
     hot: true
   },
   module: {
