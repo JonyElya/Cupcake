@@ -10,7 +10,7 @@ import {
   InputGroupAddon,
   Input
 } from "reactstrap";
-import style from "./book.module.css";
+import style from "../../../styles/book.module.css";
 
 const BookModal = props => {
   const [modal, setModal] = useState(false);
@@ -24,10 +24,7 @@ const BookModal = props => {
       price: props.book.price
     });
   };
-  const changeQuantity = e => {
-    let q = e.target.value;
-    props.updateQuan(q);
-  };
+
   return (
     <div className={style.books}>
       <NavLink onClick={toggle}>
@@ -47,17 +44,6 @@ const BookModal = props => {
           <NavLink href={props.book.url}>Посмотреть</NavLink>
         </ModalBody>
         <ModalFooter>
-          <InputGroup>
-            <Input
-              placeholder="Количество"
-              min={0}
-              max={100}
-              type="number"
-              step="1"
-              onChange={changeQuantity}
-            />
-            <InputGroupAddon addonType="append">шт.</InputGroupAddon>
-          </InputGroup>
           <Button color="primary" onClick={addBookHandler}>
             Добавить {props.addedCount > 0 && `(${props.addedCount})`}
           </Button>{" "}

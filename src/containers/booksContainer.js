@@ -1,7 +1,7 @@
 import React from "react";
-import Books from "./books";
+import Books from "../components/Books/books";
 import { connect } from "react-redux";
-import { setBooks } from "../../../redux/booksReducers";
+import { setBooks } from "../actions/actions";
 import * as axios from "axios";
 // import { Lines } from "react-preloaders";
 // import { usersAPI } from "../../api/api";

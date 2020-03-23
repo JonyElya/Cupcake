@@ -26,16 +26,4 @@ const cart = (state = initialState, action) => {
       return state;
   }
 };
-export const addToCart = obj => ({
-  type: ADD_TO_CART,
-  payload: obj
-});
-export const updateQuan = obj => ({
-  type: UPDATE_QUANTITY,
-  payload: obj
-});
-export const removeFromCart = id => ({
-  type: REMOVE_FROM_CART,
-  payload: id
-});
 export default cart;

@@ -1,12 +1,8 @@
 import { connect } from "react-redux";
 
-import {
-  addToCart,
-  removeFromCart,
-  updateQuan
-} from "../../../../redux/cartReducer";
+import { addToCart, removeFromCart, updateQuan } from "../actions/actions";
 
-import BookModal from "./bookModal";
+import BookModal from "../components/Books/book/bookModal";
 
 const mapStateToProps = ({ cart }) => ({
   addedCount: cart.items.reduce((count, book) => count + (book ? 1 : 0), 0)

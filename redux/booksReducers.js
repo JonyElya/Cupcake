@@ -13,9 +13,4 @@ const BooksReducer = (state = initialState, action) => {
       return state;
   }
 };
-export const setBooks = b => ({
-  type: SET_BOOKS,
-  b
-});
-
 export default BooksReducer;

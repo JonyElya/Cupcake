@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
-import { addToCart, removeFromCart } from "../../../redux/cartReducer";
-import NavBar from "./navbar";
+import { addToCart, removeFromCart } from "../actions/actions";
+import NavBar from "../components/Navbar/navbar";
 import uniqBy from "lodash/uniqBy";
 import filter from "lodash/filter";
 

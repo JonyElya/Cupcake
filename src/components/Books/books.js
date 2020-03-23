@@ -1,7 +1,6 @@
 import React from "react";
-import BookModal from "./book/bookModal";
-import style from "./books.module.css";
-import BookContainer from "./book/bookContainer";
+import style from "../../styles/books.module.css";
+import BookContainer from "../../containers/bookContainer";
 
 const Books = props => {
   return (
